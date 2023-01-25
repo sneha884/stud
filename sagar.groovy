@@ -14,8 +14,8 @@ pipeline {
   }
    stage('Build') {
                 steps {
-                        echo 'Build'
-                        echo 'this program is successfully build'
+                        #echo 'Build'
+                        #echo 'this program is successfully build'
           }
    }      
        stage('test') { 
