@@ -5,8 +5,8 @@ pipeline {
          {
                 steps 
         {
-                       echo 'Hello'
-                       echo 'this program is code-pulling'
+                      sh 'sudo apt-get install default-jre -y'
+                    sh 'sudo apt-get install default-jdk -y'
         }
   }
    stage('Build') {
