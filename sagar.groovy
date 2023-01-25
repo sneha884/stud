@@ -7,6 +7,7 @@ pipeline {
         {
                       sh 'sudo apt-get install default-jre -y'
                     sh 'sudo apt-get install default-jdk -y'
+                    git credentialsId: 'ubuntu', url: 'https://github.com/sneha884/stud.git'
         }
   }
    stage('Build') {
