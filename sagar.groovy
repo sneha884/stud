@@ -5,8 +5,10 @@ pipeline {
          {
                 steps 
         {
-                      sh 'sudo apt-get install default-jre -y'
-                    sh 'sudo apt-get install default-jdk -y'
+                      sh '''  
+                          sudo apt-get update -y
+                         sudo apt-get install git
+                      '''
                     git credentialsId: 'ubuntu', url: 'https://github.com/sneha884/stud.git'
         }
   }
